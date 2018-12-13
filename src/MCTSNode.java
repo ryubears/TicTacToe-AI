@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 
-class TreeNode {
+class MCTSNode {
     int row;
     int col;
+    int height;
     double points;
     int numTries;
     int player;
     int[][] board;
-    TreeNode parent;
-    ArrayList<TreeNode> children;
+    int[][][] board3D;
+    MCTSNode parent;
+    ArrayList<MCTSNode> children;
 }
